@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Set up Layout Manager, reverse layout
         mManager = new LinearLayoutManager(this);
+        mManager.setReverseLayout(true);
+        mManager.setStackFromEnd(true);
 
         mRecycler.setLayoutManager(mManager);
 
